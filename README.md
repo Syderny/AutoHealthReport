@@ -1,20 +1,25 @@
 # SYSU Health Report Template
 
-[SYSU Health Report](https://github.com/marketplace/actions/sysu-health-report) 的配置模板
+[SYSU Health Report](https://github.com/Syderny/SYSU-HealthReport) 的配置模板。
+原项目为 [@Editst](https://github.com/Editst) 的 [jksb_sysu](https://github.com/Editst/SYSU-HealthReport) 。本项目更改了验证码的识别方式，现在使用百度ai提供的免费应用，更加方便使用。
 
 **已可以正常运行，仍存在较大不确定性，谨慎使用**
 
 # 使用
 
-- 点击 [Use this template](https://github.com/Editst/SYSU-HealthReport-Template/generate) 创建一个新的仓库（同时点个 Star）。
+- 点击 [Use this template](https://github.com/Syderny/AutoHealthReport/generate) 创建一个新的仓库。
 
-- 注册[第三方在线识别平台](http://fast.95man.com)，每日免费额度100，获取 Token。
+- 注册 [百度云账号](https://ai.baidu.com/tech/ocr) ，并创建一个自己的OCR应用，保存App ID、Api Key、Secret Key这三个参数。
 
-- 在新仓库中 Settings-Secrets 填写下列信息，注意需要大写，可参考[这里](https://docs.github.com/en/actions/security-guides/encrypted-secrets)。
+<img width="787" alt="image" src="https://user-images.githubusercontent.com/43570957/159112921-eded6820-fc06-4ab3-a6ab-d951f8af22c6.png">
 
-| NETID | PASSWORD | OCR_TOKEN |
-| :-----: | :--------: | :---------: |
-| NETID |   密码    | 在线识别平台的 TOKEN |
+
+- 在新仓库中 Settings-Secrets-Action 添加以下secrets（Repository Secrets即可），根据自己的netid账号密码，以及刚刚获取的三个参数。
+
+![image](https://user-images.githubusercontent.com/43570957/159113007-d0b9f250-b087-4b57-b8d3-de0445d84078.png)
+
+![image](https://user-images.githubusercontent.com/43570957/159113021-3d90d369-5a5a-4d6c-937d-72927fea65af.png)
+
 
 # 定时运行
 
