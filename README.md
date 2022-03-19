@@ -9,7 +9,7 @@
 
 - 点击 [Use this template](https://github.com/Syderny/AutoHealthReport/generate) 创建一个新的仓库。
 
-- 注册 [百度云账号](https://ai.baidu.com/tech/ocr) ，并创建一个自己的OCR应用，保存App ID、Api Key、Secret Key这三个参数。
+- 注册 [百度云账号](https://ai.baidu.com/tech/ocr) ，并创建一个自己的文字识别应用（注意包括通用文字识别（标准版）API），保存App ID、Api Key、Secret Key这三个参数。
 
 <img width="787" alt="image" src="https://user-images.githubusercontent.com/43570957/159112921-eded6820-fc06-4ab3-a6ab-d951f8af22c6.png">
 
@@ -20,10 +20,16 @@
 
 ![image](https://user-images.githubusercontent.com/43570957/159113021-3d90d369-5a5a-4d6c-937d-72927fea65af.png)
 
+配置完毕。
 
 # 定时运行
 
 默认配置为每天 0:30 UTC 运行，对应运行时间约为 9:30 Asia/Shanghai（实际上会延迟二十多分钟），如需修改时间请参考[这里](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)。
+
+# 手动运行
+用于测试是否可行，点击仓库的Actions
+<img width="930" alt="image" src="https://user-images.githubusercontent.com/43570957/159113130-bf787f41-167f-431b-8471-2616feb1bf81.png">
+可查看后台运行的命令行，运行成功可在微信收到申报成功的通知。
 
 # 可选
 
