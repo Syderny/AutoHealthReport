@@ -24,7 +24,7 @@
 
 # 定时运行
 
-默认配置为每天 0:30 UTC 运行，对应运行时间约为 9:30 Asia/Shanghai（实际上会延迟二十多分钟），如需修改时间请参考[这里](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)。
+默认配置为每天 23:30 UTC 运行，对应运行时间约为 7:30 Asia/Shanghai（实际上在7：40），如需修改时间请参考[这里](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#scheduled-events)。
 
 # 手动运行
 用于测试是否可行，点击仓库的Actions
